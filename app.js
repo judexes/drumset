@@ -12,5 +12,18 @@ window.addEventListener("keydown", function (e) {
   console.log(key);
 
   key.classList.add('playing');
-  key.classList.remove('playing');
+
+  
 });
+
+const keys = document.querySelectorAll('.key');
+
+keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+
+key.onclick = () => {
+  const key = document.querySelector('#key');
+  if (key.classList.contains("key")) {
+    key.classList.remove("kwy");
+
+  }
+}

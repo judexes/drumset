@@ -6,7 +6,7 @@
         <link rel='stylesheet' type='text/css' media='screen' href='app.css'>
     </head>
     <body>
-        <div class="d-flex flex-row key">
+        <div onclick="removeClass(playing)" id="key" class="d-flex flex-row keys">
             <div class="p-2">
                 <div data-key="97" class="key">
                     <kbd>1</kbd>
@@ -61,7 +61,7 @@
                     <span class="sound">tink</span>
                 </div>                
             </div>
-          </div>
+        </div>
         <audio src="sounds/clap.wav" data-key="97"></audio>
         <audio src="sounds/hihat.wav" data-key="98"></audio>
         <audio src="sounds/kick.wav" data-key="99"></audio>
