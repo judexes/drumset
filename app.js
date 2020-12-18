@@ -19,11 +19,3 @@ window.addEventListener("keydown", function (e) {
 const keys = document.querySelectorAll('.key');
 
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-
-key.onclick = () => {
-  const key = document.querySelector('#key');
-  if (key.classList.contains("key")) {
-    key.classList.remove("kwy");
-
-  }
-}
